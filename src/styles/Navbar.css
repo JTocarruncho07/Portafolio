@@ -1,0 +1,149 @@
+.navbar {
+  position: fixed;
+  background: rgba(26, 26, 26, 0.1);
+  backdrop-filter: blur(20px); 
+  -webkit-backdrop-filter: blur(20px);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar.visible {
+  transform: translateY(0);
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.navbar-logo {
+  height: 50px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-right: -24px;
+}
+
+.nav-item {
+  height: 80px;
+}
+
+.nav-link {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.nav-link:hover {
+  color: #560cb7d8;
+}
+
+/* Icono del menú móvil */
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar-container {
+    padding: 0 1rem;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    background: rgba(26, 26, 26, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .nav-menu.active {
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-item {
+    height: 60px;
+    width: 100%;
+  }
+
+  .nav-link {
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+    font-size: 1.2rem;
+  }
+
+  .nav-link:hover {
+    background-color: rgba(86, 12, 183, 0.1);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-logo {
+    height: 40px;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    padding: 1.2rem;
+  }
+}

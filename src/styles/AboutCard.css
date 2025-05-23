@@ -1,0 +1,76 @@
+.about-card {
+  background: var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin: 15px;
+  width: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+  color: var(--text-color);
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border-color: var(--secondary-color);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover .card-icon {
+  transform: scale(1.1);
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: var(--text-color);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.about-card:hover .card-content h3 {
+  color: var(--secondary-color);
+}
+
+.card-content p {
+  color: var(--text-color);
+  opacity: 0.9;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.skill-level {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.level-bar {
+  flex-grow: 1;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.level-fill {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.skill-level span {
+  font-size: 0.875rem;
+  color: #6b7280;
+  min-width: 40px;
+}
