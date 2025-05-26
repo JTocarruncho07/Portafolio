@@ -10,7 +10,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  min-height: calc(100vh - 80px - 100px); /* Altura total - navbar - footer */
+  min-height: 100vh; 
 }
 
 .services h2 {
