@@ -4,8 +4,12 @@ import Navbar from '../components/Navbar';
 import ServiceCard from '../components/ServiceCard';
 import { services } from '../utils/services';
 import Footer from '../components/Footer';
+import { useEffect } from 'react';
 
 const Services = () => {
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
     return (
         <div className="services">
             <Navbar />

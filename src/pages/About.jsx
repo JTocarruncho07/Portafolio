@@ -4,8 +4,12 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import AboutCard from '../components/AboutCard';
 import { programmingLanguages } from '../utils/about';
+import { useEffect } from 'react';
 
 const About = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (    
         <div className='about'>
             <Navbar />

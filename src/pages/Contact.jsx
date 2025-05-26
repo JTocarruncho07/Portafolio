@@ -2,8 +2,12 @@ import React, { useState } from 'react';
 import '../styles/Contact.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { useEffect } from 'react';
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const onSubmit = async (event) => {

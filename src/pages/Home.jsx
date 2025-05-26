@@ -5,8 +5,12 @@ import Navbar from '../components/Navbar';
 import ServiceCard from '../components/ServiceCard';
 import { services } from '../utils/services';
 import Footer from '../components/Footer';
+import { useEffect } from 'react';
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const onSubmit = async (event) => {
