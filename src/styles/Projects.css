@@ -63,6 +63,7 @@
     overflow: hidden;
     transition: transform 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: url(../img/cdp.png) 2 2, auto !important;
 }
 
 .project-card:hover {
@@ -74,7 +75,7 @@
     width: 100%;
     height: 200px;
     overflow: hidden;
-    cursor: pointer;
+    cursor: url(../img/cdp.png) 2 2, auto !important;
 }
 
 .project-image img {
@@ -100,6 +101,7 @@
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    cursor: url(../img/cdp.png) 2 2, auto !important;
 }
 
 .project-card:hover .project-overlay {
@@ -114,6 +116,7 @@
     border: 2px solid white;
     border-radius: 20px;
     transition: all 0.3s ease;
+    cursor: url(../img/cdp.png) 2 2, auto !important;
 }
 
 .project-overlay span:hover {
@@ -171,6 +174,7 @@
     overflow: hidden;
     transition: transform 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: url(../img/cdp.png) 2 2, auto !important;
 }
 
 .mockup-card:hover {
@@ -182,7 +186,7 @@
     width: 100%;
     height: 250px;
     overflow: hidden;
-    cursor: pointer;
+    cursor: url(../img/cdp.png) 2 2, auto !important;
 }
 
 .mockup-image img {
@@ -208,6 +212,7 @@
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    cursor: url(../img/cdp.png) 2 2, auto !important;
 }
 
 .mockup-card:hover .mockup-overlay {
@@ -220,6 +225,7 @@
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
+    cursor: url(../img/cdp.png) 2 2, auto !important;
 }
 
 .mockup-info {
@@ -272,7 +278,7 @@
     border: none;
     color: white;
     font-size: 2rem;
-    cursor: pointer;
+    cursor: url(../img/cdp.png) 2 2, auto !important;
     padding: 0.5rem;
 }
 
