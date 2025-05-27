@@ -20,17 +20,17 @@
 body {
   overflow-x: hidden;
   width: 100%;
-  cursor: url(img/navegacion.png) 2 2, auto !important;
+  cursor: url(/img/navegacion.png) 2 2, auto !important;
 }
 
 /* Cursor para elementos interactivos */
 a, button, .nav-link, .contact-button, .social-links a, .footer-menu li a {
-  cursor: url(img/cdp.png) 2 2, auto !important;
+  cursor: url(/img/cdp.png) 2 2, auto !important;
 }
 
 /* Cursor para elementos de texto */
 input, textarea, label, [contenteditable="true"] {
-  cursor: url(img/tipo.png) 2 2, text !important;
+  cursor: url(/img/tipo.png) 2 2, text !important;
 }
 
 /* Cursor para elementos deshabilitados */
