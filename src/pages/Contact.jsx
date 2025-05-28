@@ -9,6 +9,16 @@ const Contact = () => {
     window.scrollTo(0, 0);
   }, []);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -55,9 +65,15 @@ const Contact = () => {
             <i className="fas fa-phone"></i>
             <h3>Teléfono</h3>
             <p>+57 313 495 4563</p>
-            <a href="tel:+573134954563" className="contact-button" target="_blank" rel="noopener noreferrer">
-              <i className="fas fa-phone"></i> Llamar
-            </a>
+            {isMobile ? (
+              <a href="tel:+573134954563" className="contact-button" target="_blank" rel="noopener noreferrer">
+                <i className="fas fa-phone"></i> Llamar
+              </a>
+            ) : (
+              <span className="contact-button disabled">
+                <i className="fas fa-phone"></i> Llamar
+              </span>
+            )}
           </div>
 
           <div className="contact-card">
