@@ -80,7 +80,7 @@ const Contact = () => {
             <i className="fab fa-whatsapp"></i>
             <h3>WhatsApp</h3>
             <p>+57 313 495 4563</p>
-            <a href="https://wa.me/573134954563" className="contact-button" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/573134954563?text=¡Hola!%20Me%20interesa%20tu%20portafolio%20y%20me%20gustaría%20conectarme%20contigo." className="contact-button" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-whatsapp"></i> Chatear
             </a>
           </div>
