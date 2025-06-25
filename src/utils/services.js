@@ -8,7 +8,7 @@ export const services = [
   {
     id: 2,
     title: "Aplicaciones Web",
-    description: "Aplicaciones web dinámicas con React y Next.js. Integración con APIs y bases de datos.",
+    description: "Aplicaciones web dinámicas con React y Node.js. Integración con APIs y bases de datos.",
     icon: "img/Servicios/aplicaciones.png"
   },
   {
