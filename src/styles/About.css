@@ -6,9 +6,15 @@
 }
 
 .about-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1090px) {
+  .about-content {
+    padding: 0 1rem;
+  }
 }
 
 .about-content h2 {

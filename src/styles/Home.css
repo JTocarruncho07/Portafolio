@@ -1,3 +1,8 @@
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 :root {
   --primary-color: #1f2937;
   --secondary-color: #560cb7d8;
@@ -18,9 +23,7 @@
 }
 
 body {
-  overflow-x: hidden;
-  width: 100%;
-  cursor: url(/img/navegacion.png) 2 2, auto !important;
+  background-color: #242424;
 }
 
 /* Cursor para elementos interactivos */
@@ -174,6 +177,9 @@ button:disabled:hover {
 }
 
 .content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   position: relative;
   z-index: 2;
   display: flex;
@@ -182,9 +188,13 @@ button:disabled:hover {
   align-items: center;
   gap: 1rem;
   background-color: rgba(0, 0, 0, 0.1);
-  width: 100%;
   min-height: calc(100vh - 70px);
-  padding: 2rem 0;
+}
+
+@media (max-width: 1090px) {
+  .content {
+    padding: 0 1rem;
+  }
 }
 
 .content h1 {
@@ -217,6 +227,10 @@ button:disabled:hover {
 }
 
 .services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

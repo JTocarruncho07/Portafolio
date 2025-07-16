@@ -40,7 +40,7 @@ const Home = () => {
         alert("Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.");
       }
     } catch (err) {
-      console.error("Error al enviar el formulario:", err);
+      console.error("Error al enviar el formulario:", err);   
       alert("Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.");
     } finally {
       setIsSubmitting(false);
