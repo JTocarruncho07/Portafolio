@@ -222,7 +222,6 @@ button:disabled:hover {
 /* Services Section */
 .services {
   background-color: var(--background-dark);
-  padding: 2rem;
   text-align: center;
 }
 
