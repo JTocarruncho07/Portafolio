@@ -35,7 +35,7 @@ const Navbar = () => {
     <nav className={`navbar ${isVisible ? 'visible' : 'hidden'}`}>
       <div className='navbar-container'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          <img src="/img/Logos/logoCianF.png" alt="logo" />
+          <img src="/img/Logos/logoNavbar.png" alt="logo" />
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           {click ? <FaTimes /> : <FaBars />}

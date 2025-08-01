@@ -56,7 +56,7 @@ const Home = () => {
         <section className="main">
           <div className='content'>
             <img 
-              src="img/Logos/logoMorado.png" 
+              src="img/Logos/logoInicio.png" 
               alt="Logo" 
               className="logo" 
             />
