@@ -28,6 +28,7 @@ body {
   display: flexbox;
   place-items: center;
   width: 100%;
+  cursor: url(/img/navegacion.png) 2 2, auto !important;
   min-height: 100%;
 }
 
