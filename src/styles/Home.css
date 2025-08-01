@@ -331,7 +331,7 @@ button:disabled:hover {
   }
 }
 
-a.trabajo {
+a.trabajo, button.trabajo {
   font-size: 1rem;
   padding: 1em 2.7em;
   font-weight: 500;
@@ -348,14 +348,14 @@ a.trabajo {
   display: inline-block;
 }
 
-a.trabajo:hover {
+a.trabajo:hover, button.trabajo:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   color: var(--text-color);
   text-decoration: none;
 }
 
-a.trabajo .gradient {
+a.trabajo .gradient, button.trabajo .gradient {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -370,13 +370,13 @@ a.trabajo .gradient {
   );
 }
 
-a.trabajo .label {
+a.trabajo .label, button.trabajo .label {
   position: relative;
   top: 1px;
   z-index: 2;
 }
 
-a.trabajo .transition {
+a.trabajo .transition, button.trabajo .transition {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-duration: var(--transition-duration);
   background-color: var(--secondary-color);
@@ -389,11 +389,27 @@ a.trabajo .transition {
   transform: translate(-50%, -50%);
 }
 
-a.trabajo:hover .transition {
+a.trabajo:hover .transition, button.trabajo:hover .transition {
   width: 100em;
   height: 100em;
 }
 
-a.trabajo:active {
+a.trabajo:active, button.trabajo:active {
   transform: scale(0.97) translateY(-2px);
+}
+
+button.trabajo:disabled {
+  opacity: 0.7;
+  cursor: not-allowed !important;
+  transform: none;
+  box-shadow: none;
+}
+
+button.trabajo:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+button.trabajo:disabled .transition {
+  display: none;
 }

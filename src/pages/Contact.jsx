@@ -133,7 +133,7 @@ const Contact = () => {
               required
             ></textarea>
 
-            <button type="submit" disabled={isSubmitting}>
+            <button type="submit" className="trabajo" disabled={isSubmitting}>
               <span className="transition"></span>
               <span className="gradient"></span>
               <span className="label">

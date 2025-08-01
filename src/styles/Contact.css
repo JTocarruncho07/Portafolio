@@ -182,25 +182,19 @@ html, body {
   resize: vertical;
 }
 
-.contact button {
-  background: var(--secondary-color);
-  color: white;
-  padding: 0.8rem 1.8rem;
-  border: none;
-  border-radius: var(--border-radius);
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
+/* El botón ahora usa la clase 'trabajo' definida en Home.css */
+.contact button.trabajo {
   margin-top: 0.8rem;
-  width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Estilos de hover eliminados ya que ahora usa la clase 'trabajo' */
+/* 
 .contact button:hover {
   background: var(--primary-color);
   transform: translateY(-2px);
-}
+} */
 
 @media (max-width: 768px) {
   .contact-page {
