@@ -24,7 +24,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="copyright">
-          <p>&copy; {new Date().getFullYear()} JPBYTES. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} CodevJP. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
