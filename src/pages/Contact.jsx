@@ -26,7 +26,7 @@ const Contact = () => {
 
     try {
       const formData = new FormData(event.target);
-      formData.append("access_key", "82d9b75c-311e-489f-8ab3-c366b1aad4da");
+      formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
 
       const object = Object.fromEntries(formData);
       const json = JSON.stringify(object);
